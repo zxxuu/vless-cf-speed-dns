@@ -1,0 +1,13 @@
+services:
+  vless-cf-speed-dns:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: vless-cf-speed-dns
+    restart: unless-stopped
+    environment:
+      TZ: Asia/Shanghai
+      RUN_INTERVAL_SECONDS: "86400"
+      RUN_CONTINUE_ON_FAILURE: "true"
+    volumes:
+      - ./:/app

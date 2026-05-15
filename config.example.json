@@ -1,0 +1,54 @@
+{
+  "cloudflare": {
+    "enabled": true,
+    "api_token": "YOUR_CLOUDFLARE_API_TOKEN",
+    "zone_id": "YOUR_CLOUDFLARE_ZONE_ID",
+    "record_names": [
+      "cf1.example.com",
+      "cf2.example.com",
+      "cf3.example.com",
+      "cf4.example.com",
+      "cf5.example.com"
+    ],
+    "ttl": 120,
+    "proxied": false,
+    "connect_timeout": 5,
+    "read_timeout": 10,
+    "max_retries": 3,
+    "retry_delay_seconds": 5
+  },
+  "speedtest": {
+    "top_count": 5,
+    "download_test_count": 12,
+    "test_port": 443,
+    "latency_threads": 200,
+    "latency_attempts": 4,
+    "max_latency_ms": 200,
+    "min_download_speed_mb": 0,
+    "download_test_seconds": 5,
+    "print_result_count": 0,
+    "selection_mode": "speed",
+    "latency_weight": 0.25,
+    "speed_weight": 0.75,
+    "max_selected_latency_ms": 120,
+    "min_selected_speed_mb": 8,
+    "print_all_results": true,
+    "print_results_limit": 30,
+    "allow_partial_selection": true,
+    "ipv4_file": "ip.txt",
+    "output_csv": "data/result.csv",
+    "extra_args": []
+  },
+  "github_sync": {
+    "enabled": false,
+    "branch": "main",
+    "commit_message": "Update Cloudflare speed IPs"
+  },
+  "runtime": {
+    "cfst_path": "",
+    "auto_download_cfst": true,
+    "keep_previous_record_when_not_enough_ips": true,
+    "dns_update_strategy": "rotate",
+    "state_file": "data/state.json"
+  }
+}

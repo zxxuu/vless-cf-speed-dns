@@ -1,0 +1,10 @@
+config.json
+config.local.json
+vendor/
+logs/
+data/*
+!data/.gitkeep
+*.log
+__pycache__/
+*.pyc
+.env
