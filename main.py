@@ -221,6 +221,10 @@ def run_speedtest(config, cfst_path):
         "-p", str(st.get("print_result_count", 0)),
     ]
 
+    download_url = str(st.get("download_url", "")).strip()
+    if download_url:
+        cmd.extend(["-url", download_url])
+
     extra_args = st.get("extra_args", [])
     if extra_args:
         cmd.extend(str(arg) for arg in extra_args)

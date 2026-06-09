@@ -26,6 +26,7 @@
     "max_latency_ms": 200,
     "min_download_speed_mb": 0,
     "download_test_seconds": 5,
+    "download_url": "https://speed.cloudflare.com/__down?bytes=20000000",
     "print_result_count": 0,
     "selection_mode": "speed",
     "latency_weight": 0.25,

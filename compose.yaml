@@ -7,7 +7,7 @@ services:
     restart: unless-stopped
     environment:
       TZ: Asia/Shanghai
-      RUN_INTERVAL_SECONDS: "86400"
+      RUN_INTERVAL_SECONDS: "7200"
       RUN_CONTINUE_ON_FAILURE: "true"
     volumes:
       - ./:/app
