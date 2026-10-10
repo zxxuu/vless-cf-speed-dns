@@ -41,7 +41,7 @@
     "latency_weight": 0.25,
     "speed_weight": 0.75,
     "max_selected_latency_ms": 0,
-    "min_selected_speed_mb": 0,
+    "min_selected_speed_mb": 2.0,
     "print_all_results": true,
     "print_results_limit": 30,
     "allow_partial_selection": true,
